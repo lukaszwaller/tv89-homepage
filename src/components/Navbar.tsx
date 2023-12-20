@@ -41,13 +41,13 @@ const Navbar = () => {
             link: "volleyball",
         },
         {
-            id: 10,
+            id: 9,
             link: "fanshop",
         },
     ];
 
     return (
-        <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-white border-b-4 border-blue shadow fixed nav">
+        <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-white border-b-4 border-blue shadow sticky nav">
             <div>
                 <h1 className="ml-2">
                     <Link href="/">
@@ -76,10 +76,13 @@ const Navbar = () => {
 
             {nav && (
                 <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen text-blue bg-white">
+                    <li className="mb-6">
+                        <Image src="/tv98-logo.svg" width={75} height={75} alt="Logo" />
+                    </li>
                     {links.map(({ id, link }) => (
                         <li
                             key={id}
-                            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+                            className="px-4 cursor-pointer capitalize py-3 text-2xl"
                         >
                             <Link onClick={() => setNav(!nav)} href={link}>
                                 {link}
