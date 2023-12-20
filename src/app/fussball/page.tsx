@@ -1,7 +1,7 @@
 export default function Fussball() {
     return (
-        <>
-            <h1>Fussball</h1>
-        </>
+        <div className="flex items-center justify-center h-screen">
+            <h1 className="text-4xl">Fussball</h1>
+        </div>
     )
 }

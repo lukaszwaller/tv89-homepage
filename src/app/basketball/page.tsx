@@ -1,7 +1,7 @@
 export default function Basketball() {
     return (
-        <>
-        <h1>Basketball</h1>
-        </>
+        <div className="flex items-center justify-center h-screen">
+            <h1 className="text-4xl">Basketball</h1>
+        </div>
     )
 }
