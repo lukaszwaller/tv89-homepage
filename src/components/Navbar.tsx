@@ -51,7 +51,7 @@ const Navbar = () => {
             <div>
                 <h1 className="ml-2">
                     <Link href="/">
-                        <Image src="/tv98-logo.svg" width={50} height={50} alt="Logo" />
+                        <Image src="/tv89-logo.svg" width={50} height={50} alt="Logo" />
                     </Link>
                 </h1>
             </div>
@@ -77,7 +77,7 @@ const Navbar = () => {
             {nav && (
                 <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen text-blue bg-white">
                     <li className="mb-6">
-                        <Image src="/tv98-logo.svg" width={75} height={75} alt="Logo" />
+                        <Image src="/tv89-logo.svg" width={75} height={75} alt="Logo" />
                     </li>
                     {links.map(({ id, link }) => (
                         <li
